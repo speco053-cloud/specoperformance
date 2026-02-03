@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>SPECO Performance e Customização</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonte estilo industrial -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        body {
+            background: #0b0b0b;
+            color: #e5e5e5;
+            line-height: 1.8;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)),
+            url("https://images.unsplash.com/photo-1583121274602-3e2820c69888");
+            background-size: cover;
+            background-position: center;
+            padding: 120px 0;
+            border-bottom: 3px solid #8b0000;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        header h1 {
+            font-size: 46px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            margin-top: 15px;
+            color: #aaa;
+            font-size: 18px;
+        }
+
+        section {
+            padding: 70px 0;
+        }
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            border-left: 5px solid #8b0000;
+            padding-left: 15px;
+        }
+
+        .history {
+            background: #111;
+        }
+
+        .history p {
+            max-width: 900px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border: 2px solid #222;
+            filter: grayscale(20%) contrast(110%);
+            transition: 0.3s;
+        }
+
+        .gallery img:hover {
+            filter: grayscale(0%) contrast(120%);
+            transform: scale(1.03);
+        }
+
+        .brands {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .brands img {
+            height: 55px;
+            filter: grayscale(100%);
+            opacity: 0.6;
+        }
+
+        .brands img:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+
+        .quote {
+            background: url("https://images.unsplash.com/photo-1519681393784-d120267933ba") center/cover fixed;
+            padding: 100px 0;
+        }
+
+        .quote h3 {
+            font-size: 34px;
+            text-align: center;
+            background: rgba(0,0,0,.7);
+            padding: 40px;
+            border: 1px solid #333;
+        }
+
+        footer {
+            background: #000;
+            padding: 30px 0;
+            text-align: center;
+            color: #666;
+            border-top: 2px solid #111;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 34px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>SPECO</h1>
+        <p>Performance • Customização • Cultura Underground</p>
+    </div>
+</header>
+
+<section class="history">
+    <div class="container">
+        <h2>Raízes do Automobilismo</h2>
+        <p>
+            Antes de existirem grandes fábricas e computadores, existiam oficinas.
+            Garagens apertadas, ferramentas gastas, motores desmontados no chão.
+            O automobilismo nasceu ali — da tentativa, do erro e da obsessão por ir mais rápido.
+        </p>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2>Garage Underground</h2>
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1612538498456-e861df91d4d0" alt="Motor preparado">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="Carro esportivo">
+            <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023" alt="Carro clássico">
+            <img src="https://images.unsplash.com/photo-1617814070974-3f0c6a9c2c90" alt="WRC Rally">
+            <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2" alt="Oficina">
+            <img src="https://images.unsplash.com/photo-1597006251934-30c40a750e8c" alt="Detalhe mecânico">
+        </div>
+    </div>
+</section>
+
+<section class="history">
+    <div class="container">
+        <h2>Óleo, Aço e Performance</h2>
+        <p>
+            Performance não nasce no showroom.
+            Ela nasce no cheiro de óleo quente, no som metálico do motor girando alto
+            e nas marcas que sempre estiveram dentro das oficinas.
+        </p>
+
+        <div class="brands">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Pennzoil_logo.svg" alt="Pennzoil">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Esso_logo.svg" alt="Esso">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Castrol_logo.svg" alt="Castrol">
+        </div>
+    </div>
+</section>
+
+<section class="quote">
+    <div class="container">
+        <h3>
+            "Custom não é estética.<br>
+            É identidade, suor e mecânica."
+        </h3>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2>Clássicos, Esportivos e WRC</h2>
+        <p>
+            Dos clássicos cheios de história aos esportivos modernos,
+            passando pelo WRC — onde carro e piloto enfrentam a natureza —
+            tudo nasce da mesma raiz: a paixão por máquina, velocidade e controle.
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 SPECO Performance e Customização</p>
+    <p>Garage • Performance • Underground</p>
+</footer>
+
+</body>
+</html>
